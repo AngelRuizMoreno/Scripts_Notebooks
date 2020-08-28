@@ -40,7 +40,8 @@ def plipmd(topol=None,traj=None):
 			interactions = plip_job.interaction_sets[ligand]
 			for interaction in interactions.all_itypes:
 				interaction_type=str(type(interaction)).split('.')[-1].replace("'>","")
-				table.loc[index,'Frame']=i
+				table.loc[index,'Frame']=ts.frame
+				table.loc[index,'Time']=ts.time
 				table.loc[index,'Type']=interaction_type
 				table.loc[index,'Residue']=interaction.restype+str(interaction.resnr)
 				table.loc[index,'Ligand']=interaction.restype_l+str(interaction.resnr_l)
@@ -114,7 +115,7 @@ def plipmd(topol=None,traj=None):
 		os.remove(name)
 		
 		
-	table.set_index(['Frame','Type'], inplace=True)
+	table.set_index(['Frame','Time','Type'], inplace=True)
 	table.sort_index(inplace=True)
 	table.to_excel('Interactions_Table.xlsx')
 
