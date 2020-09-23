@@ -11,11 +11,13 @@ import sys
 
 
 def plipmd(topol=None,traj=None):
+
+	traj=list(traj.strip('[]').split(','))
 	
 	u = md.Universe(topol,traj)
 	bar=progressbar.ProgressBar(max_value=len(u.trajectory))
 	
-	name='frame.pdb'
+	name='frame_tmp.pdb'
 	PDB= md.Writer(name, multiframe=False)
 	for ts in u.trajectory[0:1]:
 		PDB.write(u.atoms)
@@ -30,7 +32,7 @@ def plipmd(topol=None,traj=None):
 	table=pd.DataFrame()
 	index=0
 	for i in range(len(u.trajectory)):
-		name='frame.pdb'
+		name='frame_tmp.pdb'
 		PDB= md.Writer(name, multiframe=False)
 		for ts in u.trajectory[i:i+1]:
 			PDB.write(u.atoms)
@@ -60,7 +62,7 @@ def plipmd(topol=None,traj=None):
 				elif interaction_type == 'pication':
 					table.loc[index,'Charge']=interaction.charge.type
 					table.loc[index,'ChargedAtoms']=",".join([i.type for i in interaction.charge.atoms])
-					table.loc[index,'Type']=interaction.type
+					table.loc[index,'Force']=interaction.type
 					table.loc[index,'RingType']=interaction.ring.type
 					table.loc[index,'RingAtoms']=",".join([i.type for i in interaction.ring.atoms])
 					table.loc[index,'RingAtomsIdx']=",".join([str(i.idx) for i in interaction.ring.atoms])        
@@ -100,6 +102,13 @@ def plipmd(topol=None,traj=None):
 					table.loc[index,'AngleDon']=interaction.d_angle
 					table.loc[index,'AngleWat']=interaction.w_angle
 					table.loc[index,'ProtIsDon']=interaction.protisdon
+
+				elif interaction_type == 'halogenbond':
+					table.loc[index,'Acceptor']=interaction.acctype
+					table.loc[index,'Donor']=interaction.acctype
+					table.loc[index,'Distance']=interaction.distance
+					table.loc[index,'DonAngle']=interaction.don_angle
+					table.loc[index,'AccAngle']=interaction.acc_angle
 	  
 				elif interaction_type=='metal_complex':
 					table.loc[index,'MetalType']=interaction.metal.type
@@ -115,7 +124,7 @@ def plipmd(topol=None,traj=None):
 		os.remove(name)
 		
 		
-	table.set_index(['Frame','Time','Type'], inplace=True)
+	table.set_index(['Frame','Time'], inplace=True)
 	table.sort_index(inplace=True)
 	table.to_excel('Interactions_Table.xlsx')
 
