@@ -16,14 +16,20 @@ def plipmd(topol=None,traj=None):
 	
 	u = md.Universe(topol,traj)
 
+	ligand_name=input ('Type the Resname of your Ligand (must be 3 letter code):')
+
 	for res in u.residues:
-		if res.resname=='TIP3':
+		if res.resname==ligand_name:
+			res.resname='LIG'
+		if res.resname=='TIP3' or res.resname=='SOL':
 			res.resname='HOH'
 		if res.resname=='HSD':
 			res.resname='HIS'
 	for atom in u.atoms:
 		if atom.name=='OH2':
 			atom.name='OW'
+
+	
 	
 	System=u.select_atoms('protein or (resname LIG or resname HOH)')
 	System=System.select_atoms('protein or resname LIG or (around 7 resname LIG)',updating=True)
