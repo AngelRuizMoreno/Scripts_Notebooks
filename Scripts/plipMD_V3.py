@@ -18,12 +18,14 @@ def plipmd(topol=None,traj=None):
 	
 	u = md.Universe(topol,traj)
 
-	ligand_name=input ('\n\n1) Type the Resname of your Ligand (must be 3 letter code -example: LIG -):\n>')
+	ligand_name=input ('\n\n1) Type the ResName of your Ligand (must be 3 letter code -example: LIG -):\n>')
+
+	sol_name=input ('\n2) Type the ResName of your Water (must be 3-4 letter code -example: WAT or SOL or TIP3P -):\n>')
 
 	for res in u.residues:
 		if res.resname==ligand_name:
 			res.resname='LIG'
-		if res.resname=='TIP3' or res.resname=='SOL' or res.resname=='WAT':
+		if res.resname==sol_name:
 			res.resname='HOH'
 		if 'HI' in res.resname:
 			res.resname='HIS'
@@ -45,14 +47,14 @@ def plipmd(topol=None,traj=None):
 		plip_job.load_pdb(name) 
 		plip_job.analyze()
 		print ('\nINFO:',plip_job,'\n')
-		ligand=input('2) Type the name of the ligand in trajectory to analyze (- example: LIG:S:152 -):\n>')
+		ligand=input('3) Type the name of the ligand in trajectory to analyze (- example: LIG:S:152 -):\n>')
 	os.remove(name)
 
 	table=pd.DataFrame()
 	index=0
 	print ('\nINFO: Your trajectory lenght is:{} steps\n'.format(range(len(u.trajectory))))
-	start=int(input('3) Type the starting STEP to analyze:\n>'))
-	finish=int(input('\n4) Type the ending STEP to analyze:\n>'))
+	start=int(input('4) Type the starting STEP to analyze:\n>'))
+	finish=int(input('\n5) Type the ending STEP to analyze:\n>'))
 	bar=progressbar.ProgressBar(max_value=finish)
 	print ('\n\n-----  -----  -----  RUNNING THE ANALYSIS  -----  -----  -----\n\n')
 	for i in range(start,finish):
