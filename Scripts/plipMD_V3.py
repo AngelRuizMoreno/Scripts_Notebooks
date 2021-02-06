@@ -20,14 +20,14 @@ def plipmd(topol=None,traj=None):
 
 	ligand_name=input ('\n\n1) Type the ResName of your Ligand (must be 3 letter code -example: LIG -):\n>')
 
-	sol_name=input ('\n2) Type the ResName of your Water (must be 3-4 letter code -example: WAT or SOL or TIP3P -):\n>')
+	sol_name=input ('\n2) Type the ResName of your Water (must be 3-4 letter code -example: WAT or SOL or TIP3 -):\n>')
 
 	for res in u.residues:
 		if res.resname==ligand_name:
 			res.resname='LIG'
 		if res.resname==sol_name:
 			res.resname='HOH'
-		if 'HI' in res.resname:
+		if 'HI' in res.resname or 'HSD' in res.resname:
 			res.resname='HIS'
 		if 'CY' in res.resname:
 			res.resname='CYS'
