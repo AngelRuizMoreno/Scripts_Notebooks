@@ -9,19 +9,22 @@ import sys
 
 def analyzer(file=None):
 	print ('Loading results')
-	table=pd.read_excel(file,index_col=[0])
+	table=pd.read_excel(file,index_col=[0],engine='openpyxl')
 
 	interaction_types=list(set(table['Type']))
 
-	heatmap=pd.DataFrame(index=sorted(list(set(table['Residue']))), columns=sorted(interaction_types))
+	new_names=[chain+':'+resname for chain,resname in zip(table['Chain'],table['Residue'])]
+	table['newNames']=new_names
+	heatmap=pd.DataFrame(index=sorted(list(set(table['newNames']))), columns=sorted(interaction_types))
 
-	print ('Initializing analysis and ploting results')
+	print ('initializing, saving data and ploting results')
 
-	for i in list(set(table['Residue'])):
-		residue=sorted(list(table[table['Residue']==i]['Type']))
+	for i in list(set(table['newNames'])):
+		residue=sorted(list(table[table['newNames']==i]['Type']))
 		groups=groupby(residue)
 		for x in groups:
 			heatmap.loc[i,x[0]]=len(list(x[1]))
+	
 	heatmap.to_excel('Heatmap_summary.xlsx')
 
 	plot_heatmap(data=heatmap)
@@ -44,23 +47,16 @@ def get_frequency(table=None):
 	time=table['Time'].drop_duplicates()
 	index=table.index.drop_duplicates()
 	data=pd.DataFrame()
-	hbond=[]
-	saltbridge=[]
-	pication=[]
-	hydroph=[]
-	pistack=[]
-	wb=[]
-	halogen=[]
-
+	
 	for x in index: 
-		data.loc[x,'hbond']=len([i for i in table.loc[x,'Type'] if i=='hbond'])
-		data.loc[x,'waterbridge']=len([i for i in table.loc[x,'Type'] if i=='waterbridge'])
-		data.loc[x,'saltbridge']=len([i for i in table.loc[x,'Type'] if i=='saltbridge'])
-		data.loc[x,'pication']=len([i for i in table.loc[x,'Type'] if i=='pication'])
-		data.loc[x,'hydroph']=len([i for i in table.loc[x,'Type'] if i=='hydroph_interaction'])
-		data.loc[x,'pistack']=len([i for i in table.loc[x,'Type'] if i=='pistack'])
-		data.loc[x,'halogenbond']=len([i for i in table.loc[x,'Type'] if i=='halogenbond'])
-
+		data.loc[x,'H-bon']=len([i for i in table.loc[x,'Type'] if i=='H-bond'])
+		data.loc[x,'Water-bridge']=len([i for i in table.loc[x,'Type'] if i=='Water-bridge'])
+		data.loc[x,'Salt-bridge']=len([i for i in table.loc[x,'Type'] if i=='Salt-bridge'])
+		data.loc[x,'Pi-cation']=len([i for i in table.loc[x,'Type'] if i=='Pi-cation'])
+		data.loc[x,'Hydrophobic']=len([i for i in table.loc[x,'Type'] if i=='Hydrophobic'])
+		data.loc[x,'Pi-stacking']=len([i for i in table.loc[x,'Type'] if i=='Pi-stacking'])
+		data.loc[x,'X-bond']=len([i for i in table.loc[x,'Type'] if i=='X-bond'])
+		data.loc[x,'Metal-complex']=len([i for i in table.loc[x,'Type'] if i=='Metal-complex'])
 	data.to_excel('Frequency.xlsx')
 	
 	return plot_frequency(data=data)
