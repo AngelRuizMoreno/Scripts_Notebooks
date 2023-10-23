@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.14.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_124487</BlastOutput_query-ID>
+  <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
+  <BlastOutput_query-len>335</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.001</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_124487</Iteration_query-ID>
+  <Iteration_query-def>unnamed protein product</Iteration_query-def>
+  <Iteration_query-len>335</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|P96645.1|</Hit_id>
+  <Hit_def>RecName: Full=Bifunctional muramidase/DL-endopeptidase CwlT; AltName: Full=Bifunctional cell wall hydrolase CwlT; AltName: Full=Cell wall lytic enzyme T; Flags: Precursor [Bacillus subtilis subsp. subtilis str. 168]</Hit_def>
+  <Hit_accession>P96645</Hit_accession>
+  <Hit_len>329</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>242.662</Hsp_bit-score>
+      <Hsp_score>618</Hsp_score>
+      <Hsp_evalue>3.83472e-77</Hsp_evalue>
+      <Hsp_query-from>14</Hsp_query-from>
+      <Hsp_query-to>334</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>329</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>138</Hsp_identity>
+      <Hsp_positive>200</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>335</Hsp_align-len>
+      <Hsp_qseq>PILFSLVLFFGVLISADSDDENSNFSAGITG-----MNLSAEVLKHQPMVEKYARENGISEYVNVLLAIIQVESGGTAEDVMQSSESLGLPPNSL-DTESSIKQGCKYFASLLSSCQNQGIDDLNVAIQSYNYGGGYVGYVAGKGKKYTFNLAESFAREKSGGKKVTYTNPIAVAKNGGWRYGYGNMFYVELVNQYL-----TVPQVSGELA--QKVMNEALKYQGWKYVYGGSNPNTSFDCSGLTQWCYGKAGISLPRTAQAQYDATQHLPLSQAKAGDLVFFHSTYNAGTYVTHVAIYVGNNQIYHAGDP-IGYADLSSSYWQQHLIGAGRVK</Hsp_qseq>
+      <Hsp_hseq>PFIFFFVLCIVVVMTISRENQVGDDFIGGGDGEYETVGIAPEVERFRAVFEKYARQEGVFDQVNIIMALTMQESGGRSLDIMQSSESIGLPPNSITDPERSIEVGIKHFKKVF----KQAGGDVRLTLQAYNFGSGFIDYVKKNGGKYTKKLALDFSRLQ--------------AFKMGWK-SYGDPSYVDHVMRYVKGSDKNVKPVKGSMDFYETVMKEALKYEGQPYAWGGSNPETGFDCSGLVQWSFAKAGITLPRTAQEQHGATKKISEKEATAGDLVFFGGTYE-GKAITHVGIYVGNGRMFNSNDSGIQYSDLKSGYWRDHLVSFGRIK</Hsp_hseq>
+      <Hsp_midline>P +F  VL   V+++   +++  +   G        + ++ EV + + + EKYAR+ G+ + VN+++A+   ESGG + D+MQSSES+GLPPNS+ D E SI+ G K+F  +      Q   D+ + +Q+YN+G G++ YV   G KYT  LA  F+R +              A   GW+  YG+  YV+ V +Y+      V  V G +   + VM EALKY+G  Y +GGSNP T FDCSGL QW + KAGI+LPRTAQ Q+ AT+ +   +A AGDLVFF  TY  G  +THV IYVGN +++++ D  I Y+DL S YW+ HL+  GR+K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P21171.2|</Hit_id>
+  <Hit_def>RecName: Full=Probable endopeptidase p60; AltName: Full=Invasion-associated protein p60; Flags: Precursor [Listeria monocytogenes EGD-e]</Hit_def>
+  <Hit_accession>P21171</Hit_accession>
+  <Hit_len>484</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>106.301</Hsp_bit-score>
+      <Hsp_score>264</Hsp_score>
+      <Hsp_evalue>2.18975e-24</Hsp_evalue>
+      <Hsp_query-from>217</Hsp_query-from>
+      <Hsp_query-to>333</Hsp_query-to>
+      <Hsp_hit-from>372</Hsp_hit-from>
+      <Hsp_hit-to>484</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>VMNEALKYQGWKYVYGGSNPNTSFDCSGLTQWCYGKAGISLPRTAQAQYDATQHLPLSQAKAGDLVFFHSTYNAGTYVTHVAIYVGNNQIYHAGDP-IGYADLSSSYWQQHLIGAGRV</Hsp_qseq>
+      <Hsp_hseq>IIAEAQKHLGKAYSWGGNGP-TTFDCSGYTKYVFAKAGISLPRTSGAQYASTTRISESQAKPGDLVFFD--YGSG--ISHVGIYVGNGQMINAQDNGVKYDNIHGSGWGKYLVGFGRV</Hsp_hseq>
+      <Hsp_midline>++ EA K+ G  Y +GG+ P T+FDCSG T++ + KAGISLPRT+ AQY +T  +  SQAK GDLVFF   Y +G  ++HV IYVGN Q+ +A D  + Y ++  S W ++L+G GRV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|Q01836.2|</Hit_id>
+  <Hit_def>RecName: Full=Probable endopeptidase p60; AltName: Full=Invasion-associated protein p60; Flags: Precursor [Listeria innocua Clip11262]</Hit_def>
+  <Hit_accession>Q01836</Hit_accession>
+  <Hit_len>467</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>103.605</Hsp_bit-score>
+      <Hsp_score>257</Hsp_score>
+      <Hsp_evalue>1.6948e-23</Hsp_evalue>
+      <Hsp_query-from>214</Hsp_query-from>
+      <Hsp_query-to>333</Hsp_query-to>
+      <Hsp_hit-from>352</Hsp_hit-from>
+      <Hsp_hit-to>467</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>81</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>121</Hsp_align-len>
+      <Hsp_qseq>AQKVMNEALKYQGWKYVYGGSNPNTSFDCSGLTQWCYGKAGISLPRTAQAQYDATQHLPLSQAKAGDLVFFHSTYNAGTYVTHVAIYVGNNQIYHAGDP-IGYADLSSSYWQQHLIGAGRV</Hsp_qseq>
+      <Hsp_hseq>ASALIAEAQKHLGKAYSWGGNGP-TTFDCSGFTKYVFAKSGISLPRTSGAQYASTTRISESQAKPGDLVFF----DYGSGISHVGIYVGNGQMINAQDNGVKYDNIHGAGWGKFLVGFGRV</Hsp_hseq>
+      <Hsp_midline>A  ++ EA K+ G  Y +GG+ P T+FDCSG T++ + K+GISLPRT+ AQY +T  +  SQAK GDLVFF    + G+ ++HV IYVGN Q+ +A D  + Y ++  + W + L+G GRV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|Q01837.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable endopeptidase p60; AltName: Full=Invasion-associated protein p60; Flags: Precursor [Listeria ivanovii]</Hit_def>
+  <Hit_accession>Q01837</Hit_accession>
+  <Hit_len>524</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.449</Hsp_bit-score>
+      <Hsp_score>254</Hsp_score>
+      <Hsp_evalue>6.16822e-23</Hsp_evalue>
+      <Hsp_query-from>217</Hsp_query-from>
+      <Hsp_query-to>333</Hsp_query-to>
+      <Hsp_hit-from>412</Hsp_hit-from>
+      <Hsp_hit-to>524</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>78</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>VMNEALKYQGWKYVYGGSNPNTSFDCSGLTQWCYGKAGISLPRTAQAQYDATQHLPLSQAKAGDLVFFHSTYNAGTYVTHVAIYVGNNQIYHAGDP-IGYADLSSSYWQQHLIGAGRV</Hsp_qseq>
+      <Hsp_hseq>LIAEAQKHLGKAYSWGGNGP-TTFDCSGFTKYVFAKSGVTLPRTSGAQYASSTKISESQAKPGDLVFF----DYGNGIAHVGIYVGNGQMINAQDNGVKYDNIHGSGWGQFLVGFGRV</Hsp_hseq>
+      <Hsp_midline>++ EA K+ G  Y +GG+ P T+FDCSG T++ + K+G++LPRT+ AQY ++  +  SQAK GDLVFF    + G  + HV IYVGN Q+ +A D  + Y ++  S W Q L+G GRV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|Q01839.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable endopeptidase p60; AltName: Full=Invasion-associated protein p60; Flags: Precursor [Listeria welshimeri]</Hit_def>
+  <Hit_accession>Q01839</Hit_accession>
+  <Hit_len>524</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>102.449</Hsp_bit-score>
+      <Hsp_score>254</Hsp_score>
+      <Hsp_evalue>6.91515e-23</Hsp_evalue>
+      <Hsp_query-from>223</Hsp_query-from>
+      <Hsp_query-to>333</Hsp_query-to>
+      <Hsp_hit-from>418</Hsp_hit-from>
+      <Hsp_hit-to>524</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>55</Hsp_identity>
+      <Hsp_positive>75</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>112</Hsp_align-len>
+      <Hsp_qseq>KYQGWKYVYGGSNPNTSFDCSGLTQWCYGKAGISLPRTAQAQYDATQHLPLSQAKAGDLVFFHSTYNAGTYVTHVAIYVGNNQIYHAGDP-IGYADLSSSYWQQHLIGAGRV</Hsp_qseq>
+      <Hsp_hseq>KHLGKAYSWGGNGP-TTFDCSGFTSYVFAKSGISLPRTSGAQYASTSRISESQAKPGDLVFFD--YGSG--IAHVGIYVGNGQMINAQDNGVKYDNIHGSGWGKYLVGFGRV</Hsp_hseq>
+      <Hsp_midline>K+ G  Y +GG+ P T+FDCSG T + + K+GISLPRT+ AQY +T  +  SQAK GDLVFF   Y +G  + HV IYVGN Q+ +A D  + Y ++  S W ++L+G GRV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|Q01838.1|</Hit_id>
+  <Hit_def>RecName: Full=Probable endopeptidase p60; AltName: Full=Invasion-associated protein p60; Flags: Precursor [Listeria seeligeri]</Hit_def>
+  <Hit_accession>Q01838</Hit_accession>
+  <Hit_len>523</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>101.293</Hsp_bit-score>
+      <Hsp_score>251</Hsp_score>
+      <Hsp_evalue>1.66902e-22</Hsp_evalue>
+      <Hsp_query-from>217</Hsp_query-from>
+      <Hsp_query-to>333</Hsp_query-to>
+      <Hsp_hit-from>411</Hsp_hit-from>
+      <Hsp_hit-to>523</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>54</Hsp_identity>
+      <Hsp_positive>79</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>118</Hsp_align-len>
+      <Hsp_qseq>VMNEALKYQGWKYVYGGSNPNTSFDCSGLTQWCYGKAGISLPRTAQAQYDATQHLPLSQAKAGDLVFFHSTYNAGTYVTHVAIYVGNNQIYHAGDP-IGYADLSSSYWQQHLIGAGRV</Hsp_qseq>
+      <Hsp_hseq>IIAEAQKHLGKAYSWGGNGP-TTFDCSGFTSYVFAQSGITLPRTSGAQYASTTKVSESEAQPGDLVFFD--YGSG--IAHVGIYVGNGQMINAQDNGVKYDNIHGSGWGQYLVGFGRV</Hsp_hseq>
+      <Hsp_midline>++ EA K+ G  Y +GG+ P T+FDCSG T + + ++GI+LPRT+ AQY +T  +  S+A+ GDLVFF   Y +G  + HV IYVGN Q+ +A D  + Y ++  S W Q+L+G GRV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|O34636.1|</Hit_id>
+  <Hit_def>RecName: Full=Uncharacterized membrane protein YocA [Bacillus subtilis subsp. subtilis str. 168]</Hit_def>
+  <Hit_accession>O34636</Hit_accession>
+  <Hit_len>225</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>92.4337</Hsp_bit-score>
+      <Hsp_score>228</Hsp_score>
+      <Hsp_evalue>8.28627e-21</Hsp_evalue>
+      <Hsp_query-from>54</Hsp_query-from>
+      <Hsp_query-to>214</Hsp_query-to>
+      <Hsp_hit-from>55</Hsp_hit-from>
+      <Hsp_hit-to>214</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>58</Hsp_identity>
+      <Hsp_positive>91</Hsp_positive>
+      <Hsp_gaps>3</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>HQPMVEKYARENGISEYVNVLLAIIQVESGGTAEDVMQSSESLGLPPNSL-DTESSIKQGCKYFASLLSSCQNQGIDDLNVAIQSYNYGGGYVGYVAGKGKKYTFNLAESFAREKSGGKKVTYTNPIAVAKNGGWRYGYGNMFYVELVNQYLTVPQVSGELA</Hsp_qseq>
+      <Hsp_hseq>YKPLVEEELESQGLSNYTSLILGMMYQESKGKGNDPMQSSESLGLKRNEITDPQLSVKQGIKQFTLMYKTGKEKGV-DLDTIIQSYNMGAGYIDFVAEHGGTHTEELAKQYSEQQVKKNPDLYTCG-GNAKNFRYPYCYGDYTYAEKVKEKTKTVEESLQVA</Hsp_hseq>
+      <Hsp_midline>++P+VE+     G+S Y +++L ++  ES G   D MQSSESLGL  N + D + S+KQG K F  +  + + +G+ DL+  IQSYN G GY+ +VA  G  +T  LA+ ++ ++       YT     AKN  + Y YG+  Y E V +     + S ++A</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|P0DC90.1|</Hit_id>
+  <Hit_def>RecName: Full=Pneumococcal vaccine antigen A homolog [Streptococcus pyogenes MGAS315] &gt;sp|P0DC91.1| RecName: Full=Pneumococcal vaccine antigen A homolog [Streptococcus pyogenes SSI-1]</Hit_def>
+  <Hit_accession>P0DC90</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>87.4261</Hsp_bit-score>
+      <Hsp_score>215</Hsp_score>
+      <Hsp_evalue>3.54935e-19</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>EVLKHQPMVEKYARENGISEYVNVLLAIIQVESGGTAEDVMQSSESLGLPPNSL-DTESSIKQGCKYFASLLSSCQNQGIDDLNVAIQSYNYGGGYVGYVAGKGKKYTFNLAESFARE-------KSGGKKVTYTNPIAVAKNGGWRYGYGNMFYVELV--NQYL</Hsp_qseq>
+      <Hsp_hseq>RVLAYKPMVEKTLAENDTKANVDLVLAMIYTETKGGEADVMQSSESSSGQKNSITDSQASIEHGVNLLSHNLALAEEAGVDSW-TAVQAYNFGTAYIDYIAKHGSQNTVDLATTYSKTVVAPSLGNTSGQTYFYYHPLALISGGKLYKNGGNIYYSREVHFNLYL</Hsp_hseq>
+      <Hsp_midline> VL ++PMVEK   EN     V+++LA+I  E+ G   DVMQSSES     NS+ D+++SI+ G    +  L+  +  G+D    A+Q+YN+G  Y+ Y+A  G + T +LA ++++         + G+   Y +P+A+   G      GN++Y   V  N YL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q5XC63.1|</Hit_id>
+  <Hit_def>RecName: Full=Pneumococcal vaccine antigen A homolog [Streptococcus pyogenes MGAS10394]</Hit_def>
+  <Hit_accession>Q5XC63</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>7.73961e-19</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>EVLKHQPMVEKYARENGISEYVNVLLAIIQVESGGTAEDVMQSSESLGLPPNSL-DTESSIKQGCKYFASLLSSCQNQGIDDLNVAIQSYNYGGGYVGYVAGKGKKYTFNLAESFARE-------KSGGKKVTYTNPIAVAKNGGWRYGYGNMFYVELV--NQYL</Hsp_qseq>
+      <Hsp_hseq>RVLAYKPMVEKTLAENDTKANVDLVLAMIYTETKGGEADVMQSSESSSGQKNSITDSQASIEHGVNLLSHNLALAEEAGVDSW-TAVQAYNFGTAYIDYIAKHGGQNTVDLATTYSKTVVAPSLGNTSGQTYFYYHPLALISGGKLYKNGGNIYYSREVHFNLYL</Hsp_hseq>
+      <Hsp_midline> VL ++PMVEK   EN     V+++LA+I  E+ G   DVMQSSES     NS+ D+++SI+ G    +  L+  +  G+D    A+Q+YN+G  Y+ Y+A  G + T +LA ++++         + G+   Y +P+A+   G      GN++Y   V  N YL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q8P120.1|</Hit_id>
+  <Hit_def>RecName: Full=Pneumococcal vaccine antigen A homolog [Streptococcus pyogenes MGAS8232]</Hit_def>
+  <Hit_accession>Q8P120</Hit_accession>
+  <Hit_len>199</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>86.2705</Hsp_bit-score>
+      <Hsp_score>212</Hsp_score>
+      <Hsp_evalue>7.81831e-19</Hsp_evalue>
+      <Hsp_query-from>50</Hsp_query-from>
+      <Hsp_query-to>204</Hsp_query-to>
+      <Hsp_hit-from>29</Hsp_hit-from>
+      <Hsp_hit-to>192</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>56</Hsp_identity>
+      <Hsp_positive>90</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>165</Hsp_align-len>
+      <Hsp_qseq>EVLKHQPMVEKYARENGISEYVNVLLAIIQVESGGTAEDVMQSSESLGLPPNSL-DTESSIKQGCKYFASLLSSCQNQGIDDLNVAIQSYNYGGGYVGYVAGKGKKYTFNLAESFARE-------KSGGKKVTYTNPIAVAKNGGWRYGYGNMFYVELV--NQYL</Hsp_qseq>
+      <Hsp_hseq>RVLAYKPMVEKTLAENDTKANVDLVLAMIYTETKGGEADVMQSSESSSGQKNSITDSQASIEHGVNLLSHNLALAEEAGVDSW-TAVQAYNFGTAYIDYIAKHGGQNTVDLATTYSKTVVAPSLGNTSGQTYFYYHPLALISGGKLYKNGGNIYYSREVHFNLYL</Hsp_hseq>
+      <Hsp_midline> VL ++PMVEK   EN     V+++LA+I  E+ G   DVMQSSES     NS+ D+++SI+ G    +  L+  +  G+D    A+Q+YN+G  Y+ Y+A  G + T +LA ++++         + G+   Y +P+A+   G      GN++Y   V  N YL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>482178</Statistics_db-num>
+      <Statistics_db-len>183214815</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
